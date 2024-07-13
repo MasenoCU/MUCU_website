@@ -19,17 +19,6 @@ $faqs = $homeController->getFaqs();
 $contacts = $homeController->getContacts();
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maseno University Christian Union</title>
-    <link rel="stylesheet" href="../public/assets/css/style.css">
-    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
-</head>
-<body>
-
 <!-- Hero area -->
 <section id="hero" style="height: 544px;">
     <div class="container-xl">
@@ -258,11 +247,11 @@ $contacts = $homeController->getContacts();
 <hr class="featurette-divider">
 
 <!-- I-frame for events -->
-<iframe src="components/events.php" title="Events"></iframe>
+<iframe src="../app/components/events.php" title="Events"></iframe>
 <hr class="featurette-divider">
 
 <!-- I-frame for leadership -->
-<iframe src="components/leadership.php" title="Leadership"></iframe>
+<iframe src="../app/components/leadership.php" title="Leadership"></iframe>
 <hr class="featurette-divider">
 
 <!-- FAQs Section -->
@@ -360,12 +349,4 @@ $contacts = $homeController->getContacts();
 </section>
 
 <!-- Footer -->
-<?php include("../app/components/footer.php"); ?>
-
-<!-- Main JS -->
-<script src="../public/assets/js/main.js"></script>
-<!-- Bootstrap JS -->
-<script src="../public/assets/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+<?php include"../app/components/footer.php"; ?>
